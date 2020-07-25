@@ -25,7 +25,7 @@ const NewsSection = (request) => {
                 {newsSection.length > 1 ?
                     newsSection.map((article, key) =>
                         article.urlToImage === "" || article.urlToImage === null ? null :
-                            <Col key={key} md={{ span: 8 }} sm={{ span: 1 }} >
+                            <Col key={key} md={{ span: 8 }} sm={{ span: 24 }} >
                                 <Card onClick={() => window.open(article.url, "_blank")} type="inner" hoverable="true"
                                     style={{ width: 380, marginBottom: 20 }}
                                     cover={article.urlToImage === "" || article.urlToImage === null ? null :
